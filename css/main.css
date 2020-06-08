@@ -286,7 +286,10 @@ a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 2em;
+}
+
+.previous-day {
+  opacity: 0;
 }
 
 .show-weather.previous-weather {
@@ -298,5 +301,9 @@ a:hover {
   display: block;
   -webkit-transform: rotate(180deg) translateY(-10px);
           transform: rotate(180deg) translateY(-10px);
+}
+
+.show-weather.previous-weather .previous-day {
+  opacity: 1;
 }
 /*# sourceMappingURL=main.css.map */
