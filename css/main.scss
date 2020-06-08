@@ -204,5 +204,50 @@ a {
     position: absolute;
     bottom: 0;
     width: 100%;
-    transform: translateY(60%)
+    transform: translateY(60%);
+    transition: transform 350ms ease;
+    padding: 3em;
+}
+
+.show-previous-weather {
+    position: absolute;
+    background: var(--clr-light);
+    left: 50%;
+    width: 10rem;
+    transform: translate(-50%, calc(-100% - 3rem));
+    text-align: center;
+    font-size: var(--fs-h2);
+    line-height: 1;
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);
+    cursor: pointer;
+    color: var(--clr-gray);
+    border: 0;
+    font-family: inherit;
+
+    &:hover,
+    &:focus {
+        color: var(--clr-dark);
+    }
+
+    span {
+        display: block;
+        transform: rotate(0);
+        transition: transform 350ms ease;
+    }
+}
+
+.previous-days {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.show-weather.previous-weather {
+    transform: translateY(0);
+
+    .show-previous-weather span {
+        display: block;
+        transform: rotate(180deg)
+        translateY(-10px);
+    }
 }
