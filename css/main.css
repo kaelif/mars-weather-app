@@ -231,4 +231,14 @@ a:hover {
 :checked ~ .unit__toggle::after {
   margin-left: 3px;
 }
+
+.previous-weather {
+  background: var(--clr-light);
+  color: var(--clr-dark);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  -webkit-transform: translateY(60%);
+          transform: translateY(60%);
+}
 /*# sourceMappingURL=main.css.map */
